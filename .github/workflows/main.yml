@@ -27,5 +27,5 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/arm64 \
-            -t ${{ secrets.DOCKERHUB_USER }}/back_black_room:arm64 \
+            -t ${{ secrets.DOCKERHUB_USER }}/back_black_room:v1 \
             --push .
